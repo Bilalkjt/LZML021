@@ -1,0 +1,53 @@
+html {
+    width: 100vw;
+    font-size: 14px;
+    background-color: pink;
+}
+
+h1 {
+    font-family: verdana; /*la police sera dans la police verdana*/
+    font-size: 300%;
+}
+
+h2 {
+    font-family: verdana;
+    font-size: 200%; /*le texte sera aligné au centre*/
+}
+
+#page{background-color:red;
+      border: 5px solid  darkblue;      
+      margin: auto;
+      width: 70%;      
+      border-radius: 15px;
+}
+
+.entete{text-align:center;
+}
+
+#aboutme{
+	margin-left: 40px;
+	line-height:1.5;
+}
+
+p{
+    text-decoration-line: underline;  
+    font-size: 1.25em; 
+  }
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-style: double;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+footer {
+    border-top: 4px blue;
+    text-align: center;
+    padding: 5px;
+}
