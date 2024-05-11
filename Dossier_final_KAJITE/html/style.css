@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    background-color: #70BEF9;
+    font-family: "Verdana", serif;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+#container {
+    padding: 2px;
+    height: 100%;
+    min-height: 100%;
+}
+
+#hidden {
+    display: none;
+}
+
+table,
+th,
+td {
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    font-size: 10px;
+}
+
+table tr:nth-child(odd) {
+    background-color: #dfdfdf;
+}
+
+table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+th {
+    background: #abcdef;
+}
+
+.button {
+    background-color: rgb(255, 204, 51);
+    font-size: 90%;
+    padding: 2px;
+    border: 1px solid black;
+}
+
+#cadre {
+    width: 600px;
+    background: #cee1fd;
+    padding: 1em;
+    margin: 1em auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    width: 50%;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: white; /* Nouvelle couleur de texte */
+    margin: 0; /* Suppression des marges pour éviter les espaces supplémentaires */
+}
+
+#name {
+    font-size: 2em;
+    font-family: 'Arial Narrow', sans-serif;
+    color: black;
+}
+
+#title {
+    float: center;
+    font-size: 4.8em;
+    font-family: 'Arial Narrow', sans-serif;
+    color: white;
+    -webkit-text-stroke: 1.2px black;
+    margin: 0; /* Suppression des marges pour éviter les espaces supplémentaires */
+}
+
+#header {
+    padding: 20px 10px;
+    background-color: #4CAF50; /* Nouvelle couleur de fond */
+    color: white; /* Nouvelle couleur de texte */
+    overflow: hidden;
+}
+
+#logo {
+    float: left;
+}
+
+#Global {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    border: 3px;
+    display: table;
+    background: #B6BBBF;
+    border: 1.5px solid black;
+    margin-bottom: 100px;
+}
+
+#Global #fileDisplayArea {
+    float: left;
+    padding: 5px;
+    font-size: 0.8em;
+    height: 300px;
+    overflow: scroll;
+}
+
+#Global #page-analysis {
+    margin-left: 50%;
+    height: 300px;
+    padding: 5px;
+    overflow: scroll;
+    text-align: center;
+}
+
+#profil {
+    border-radius: 50%;
+}
+
+#aide {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px;
+    padding: 1px;
+}

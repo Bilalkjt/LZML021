@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript" language="javascript" src="code.js"></script>
+	<title>Site de Kajite Bilal</title>
+</head>
+	
+<body>
+	
+	<div id="header">
+		<a id="logo" href="http://www.univ-paris3.fr/"><img src="Dossier_final_KAJITE\img\Logo_actuel_Sorbonne_Nouvelle.png" title="logo de l'université" height="100px" /></a>
+		<a id="title">Analyse de données</a>
+	</div>
+	
+	<div id="container">
+
+        <div id="cadre">
+        <p align="center"><img src="IMG_2640.jpg" id="profil" height="100" /></p>
+        <p align="center">Bilal KAJITE</p>
+        <p align="center" style="font-size:0.8em">Étudiant en L3 <i>Sciences du langage</i></p>
+        <div id="aide" align="center" style="background:orange"><p style="color:green"><b>Mode d'emploi</b></p>
+        <p align="center" style="font-size:0.8em">Sélectionnez un fichier texte pour commencer ! Survolez les boutons pour obtenir des informations sur leur fonctionnement.<br/>Cliquez <a onclick="amants()" style="color:blue">ici</a> pour charger un fichier de démonstration.</p>
+        </div>
+        <br/>
+        
+            <small>Sélectionner un fichier au format txt :</small>
+            <input type="file" id="fileInput">
+            
+            <p align="center"><small><span class="button">Délimiteur(s)</span> : <input type="text" value=" ,;’'~|&#@=`-.?!%*$()[]{}_:+«»§\/" name="delim" id="delimID"  size="40"/></small>
+		<br/>
+		
+		<small><span class="button">Pôle</span> : <input type="text" value="Entrez le pôle de la concordance" name="pole" id="poleID"  size="40"/></small><br/>
+		
+		<small><span class="button">Longueur</span> : <input type="text" value="2" name="lg" id="lgID"  size="10"/></small><br/><br/>
+
+           
+        <button class="submit tooltip" onclick="splittext()"><span>Segmentation mots</span><span class="tooltiptext">Cette fonction affiche le nombre absolu de mots typographiques (occurences de mots) ainsi que le nombre de mots-formes différents (doublons filtrés). Il n'y a pas de lemmatisation, donc les formes fléchies et dérivées d'un même lexème ("courir, courons, coureur", etc.) comptent comme mots-formes séparés.</span></button>
+        <button class="submit tooltip" onclick="nbphrases()"><span>Segmentation phrases</span><span class="tooltiptext">Cette fonction affiche le nombre absolu de mots typographiques (occurences de mots) ainsi que le nombre de mots-formes différents (doublons filtrés). Il n'y a pas de lemmatisation, donc les formes fléchies et dérivées d'un même lexème ("courir, courons, coureur", etc.) comptent comme mots-formes séparés.</span></button>		
+		<button class="submit tooltip" onclick="concordance()"><span>Cooccurents</span><span class="tooltiptext">Cherche les occurences dans le texte du motif (pôle) de votre choix, soit isolé (concordance exacte : le pôle est un mot-forme du texte) soit à l'intérieur d'un mot (concordance partielle). Affiche également les n (configurable dans <b>longueur</b>) mots autour du pôle.</span></button>
+		<button class="submit tooltip" onclick="afficherCooccurrents()"><span>Visualisation Cooccurrents</span><span class="tooltiptext">Proposer une fonction qui affiche les cooccurrents dans le texte pour tout mot rentré par l’utilisateur dans Pôle dans un intervalle indiqué par Longueur.</span></button>
+		<button class="submit tooltip" onclick="afficherAide()"><span>Afficher Aide</span><span class="tooltiptext">Cliquez ici pour afficher de l'aide sur l'utilisation du site.</span></button>
+		<div id="aideTexte" style="display: none;"></div>
+
+		   </p>
+		</div> <!-- cadre -->
+		
+		
+		<div id="placeholder" style="width:100%"></div><br/>
+		<div id="Global">
+			<div id="fileDisplayArea"></div>  <div id="page-analysis"></div> 
+		</div>
+		
+		</div> <!-- container -->
+		
+		<div id="hidden"></div>
+		
+</body>
+	
+</html>
